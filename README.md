@@ -90,6 +90,8 @@ clip_pretrained: str = "webli"
 
 The test video of the franka arm picking an object can be seen in test.mp4
 
+![Demo](text.mp4)
+
 ![Demo](demo.jpg)
 
 
