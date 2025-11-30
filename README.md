@@ -1,12 +1,12 @@
 # Creating a Diffusion Based Vision Language Model
 
-This repository contains code for training and testing a diffusion policy for Franka robot arm manipulation using image observations and text commands (CLIP or SigLIP embeddings).
+This repository contains code for training and testing a diffusion policy for Franka robot arm manipulation using image observations and text commands.
 
 ## Overview
 
 The system enables a Franka robot arm to pick and place objects based on natural language commands. It uses:
-- **Image observations**: RGB camera views (320x240) of the workspace
-- **Text commands**: Natural language descriptions (e.g., "red cube", "blue block")
+- **Image observations**: RGB camera views of the workspace
+- **Text commands**: Natural language descriptions 
 - **Diffusion policy**: Transformer-based action prediction using diffusion models
 
 ## Files
@@ -22,7 +22,7 @@ The system enables a Franka robot arm to pick and place objects based on natural
 Collects demonstration trajectories by:
 - Capturing RGB images from an overhead camera
 - Recording arm joint positions (7D)
-- Saving text labels describing the task (e.g., "red cube", "blue block")
+- Saving text labels describing the task 
 - Executing scripted pick-and-place motions
 
 **Usage:**
